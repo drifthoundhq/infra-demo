@@ -1,6 +1,6 @@
 # DriftHound Infrastructure Demo
 
-A demo repository showcasing [DriftHound](https://github.com/treezio/DriftHound) infrastructure drift detection with Terragrunt.
+A demo repository showcasing [DriftHound](https://github.com/drifthoundhq/drifthound) infrastructure drift detection with Terragrunt.
 
 This repository uses Terraform's `random` provider to simulate infrastructure without requiring any cloud accounts.
 
