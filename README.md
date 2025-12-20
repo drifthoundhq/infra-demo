@@ -4,6 +4,11 @@ A demo repository showcasing [DriftHound](https://github.com/treezio/DriftHound)
 
 This repository uses Terraform's `random` provider to simulate infrastructure without requiring any cloud accounts.
 
+Demo live site: https://demo.drifthound.io
+
+> [!NOTE]
+> DriftHound demo repository in hosted in [Render](https://render.com/) under free tier subscription. It might take some minutes to boot up as it automatically spins down after inactivity period.
+
 ## Repository Structure
 
 ```
@@ -39,8 +44,8 @@ This repository uses Terraform's `random` provider to simulate infrastructure wi
 
 ### Prerequisites
 
-- [Terraform](https://www.terraform.io/downloads) >= 1.6.0
-- [Terragrunt](https://terragrunt.gruntwork.io/docs/getting-started/install/) >= 0.54.0
+- [opentofu](https://opentofu.org/docs/v1.11/intro/install/) >= 1.11.2
+- [Terragrunt](https://terragrunt.gruntwork.io/docs/getting-started/install/) >= 0.96.0
 
 ### Initialize All Environments
 
