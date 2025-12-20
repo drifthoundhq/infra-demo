@@ -1,0 +1,18 @@
+name: Infrastructure Drift Detection
+
+on:
+  workflow_dispatch:
+  # Uncomment to enable scheduled runs
+  # schedule:
+  #   - cron: '0 */6 * * *'  # Every 6 hours
+
+jobs:
+  drift-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run drift detection
+        uses: treezio/drifthound-action@v1
+        with:
+          drifthound-url: ${{ secrets.DRIFTHOUND_URL }}
+          drifthound-token: ${{ secrets.DRIFTHOUND_TOKEN }}

@@ -1,0 +1,16 @@
+# Terragrunt cache
+.terragrunt-cache/
+**/.terragrunt-cache/
+
+# Terraform
+.terraform/
+**/.terraform/
+*.tfplan
+crash.log
+*.tfstate.backup
+
+# Keep state files for demo purposes
+# !*.tfstate
+
+# OS files
+.DS_Store

@@ -1,0 +1,59 @@
+default_tool: terragrunt
+
+tool_versions:
+  opentofu: "1.11.2"
+  terragrunt: "0.54.0"
+
+scopes:
+  # api-gateway
+  - name: "api-gateway-prod"
+    project: "api-gateway"
+    environment: "production"
+    directory: "./environments/production/api-gateway"
+    slack_channel: "#api-drift"
+
+  - name: "api-gateway-staging"
+    project: "api-gateway"
+    environment: "staging"
+    directory: "./environments/staging/api-gateway"
+
+  # auth-service
+  - name: "auth-service-prod"
+    project: "auth-service"
+    environment: "production"
+    directory: "./environments/production/auth-service"
+    slack_channel: "#auth-drift"
+
+  # billing-platform
+  - name: "billing-platform-prod"
+    project: "billing-platform"
+    environment: "production"
+    directory: "./environments/production/billing-platform"
+
+  - name: "billing-platform-staging"
+    project: "billing-platform"
+    environment: "staging"
+    directory: "./environments/staging/billing-platform"
+
+  # data-pipeline
+  - name: "data-pipeline-prod"
+    project: "data-pipeline"
+    environment: "production"
+    directory: "./environments/production/data-pipeline"
+
+  # user-database
+  - name: "user-database-prod"
+    project: "user-database"
+    environment: "production"
+    directory: "./environments/production/user-database"
+    slack_channel: "#database-drift"
+
+  - name: "user-database-staging"
+    project: "user-database"
+    environment: "staging"
+    directory: "./environments/staging/user-database"
+
+  - name: "user-database-dev"
+    project: "user-database"
+    environment: "development"
+    directory: "./environments/development/user-database"
