@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run drift detection
-        uses: treezio/drifthound-action@v1.0.0
+        uses: drifthoundhq/drifthound-action@v1.0.0
         with:
           drifthound-url: ${{ secrets.DRIFTHOUND_URL }}
           drifthound-token: ${{ secrets.DRIFTHOUND_TOKEN }}
