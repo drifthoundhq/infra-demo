@@ -20,6 +20,6 @@ inputs = {
   project_name    = "data-pipeline"
   environment     = include.env.locals.environment
   instance_name   = "pipeline-${include.env.locals.env_suffix}"
-  resource_prefix = "pipeline"
+  resource_prefix = "res-fcb733"
   service_name    = "data-pipeline-service"
 }
