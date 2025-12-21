@@ -17,7 +17,7 @@ terraform {
 }
 
 inputs = {
-  project_name    = "auth-service"
+  project_name    = "proj-0d51d7"
   environment     = include.env.locals.environment
   instance_name   = "auth-${include.env.locals.env_suffix}"
   resource_prefix = "auth"
