@@ -2,9 +2,8 @@ name: Infrastructure Drift Detection
 
 on:
   workflow_dispatch:
-  # Uncomment to enable scheduled runs
-  # schedule:
-  #   - cron: '0 */6 * * *'  # Every 6 hours
+  schedule:
+    - cron: '0 0 * * *'  # Every day at midnight
 
 jobs:
   drift-check:
