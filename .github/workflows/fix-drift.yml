@@ -6,20 +6,24 @@ on:
     # Run less frequently than drift simulation - fixes drift on Sundays
     - cron: '0 12 * * 0'  # Sunday at noon
 
+permissions:
+  contents: write
+
 jobs:
   fix-drift:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v3
+      - name: Setup OpenTofu
+        uses: opentofu/setup-opentofu@v1
         with:
-          terraform_wrapper: false
+          tofu_version: 1.11.2
+          tofu_wrapper: false
 
       - name: Setup Terragrunt
         run: |
-          curl -sL https://github.com/gruntwork-io/terragrunt/releases/download/v0.68.4/terragrunt_linux_amd64 -o terragrunt
+          curl -sL https://github.com/gruntwork-io/terragrunt/releases/download/v0.96.0/terragrunt_linux_amd64 -o terragrunt
           chmod +x terragrunt
           sudo mv terragrunt /usr/local/bin/
 
