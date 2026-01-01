@@ -10,13 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Wake up DriftHound instance
-        run: |
-          echo "Waking up DriftHound instance (Render free tier may be sleeping)..."
-          curl -sf --max-time 300 -o /dev/null "${{ secrets.DRIFTHOUND_URL }}"
-          echo "DriftHound instance is awake!"
-
       - name: Run drift detection
         uses: drifthoundhq/drifthound-action@v1.0.0
         with:
