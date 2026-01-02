@@ -17,7 +17,7 @@ terraform {
 }
 
 inputs = {
-  project_name    = "api-gateway"
+  project_name    = "proj-d06e9a"
   environment     = include.env.locals.environment
   instance_name   = "api-gw-${include.env.locals.env_suffix}"
   resource_prefix = "res-aed290"
