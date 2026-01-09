@@ -19,7 +19,7 @@ terraform {
 inputs = {
   project_name    = "data-pipeline"
   environment     = include.env.locals.environment
-  instance_name   = "pipeline-${include.env.locals.env_suffix}"
+  instance_name   = "instance-4a2cda"
   resource_prefix = "res-fcb733"
   service_name    = "data-pipeline-service"
 }
