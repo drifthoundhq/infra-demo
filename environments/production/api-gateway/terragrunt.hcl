@@ -21,5 +21,5 @@ inputs = {
   environment     = include.env.locals.environment
   instance_name   = "api-gw-${include.env.locals.env_suffix}"
   resource_prefix = "res-aed290"
-  service_name    = "api-gateway-service"
+  service_name    = "svc-7afa28"
 }
