@@ -20,6 +20,6 @@ inputs = {
   project_name    = "api-gateway"
   environment     = include.env.locals.environment
   instance_name   = "api-gw-${include.env.locals.env_suffix}"
-  resource_prefix = "apigw"
+  resource_prefix = "res-a305aa"
   service_name    = "svc-1fb41b"
 }
