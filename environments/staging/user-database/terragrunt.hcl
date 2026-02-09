@@ -17,7 +17,7 @@ terraform {
 }
 
 inputs = {
-  project_name    = "user-database"
+  project_name    = "proj-ff7023"
   environment     = include.env.locals.environment
   instance_name   = "userdb-${include.env.locals.env_suffix}"
   resource_prefix = "res-eccd17"
