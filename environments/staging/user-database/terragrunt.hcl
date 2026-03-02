@@ -21,5 +21,5 @@ inputs = {
   environment     = include.env.locals.environment
   instance_name   = "userdb-${include.env.locals.env_suffix}"
   resource_prefix = "res-eccd17"
-  service_name    = "svc-abf304"
+  service_name    = "svc-43dfe9"
 }
