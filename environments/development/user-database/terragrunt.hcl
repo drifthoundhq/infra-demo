@@ -20,6 +20,6 @@ inputs = {
   project_name    = "user-database"
   environment     = include.env.locals.environment
   instance_name   = "instance-6db3fc"
-  resource_prefix = "res-c1bcc7"
+  resource_prefix = "res-8449ad"
   service_name    = "svc-184e31"
 }
