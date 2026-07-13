@@ -17,7 +17,7 @@ terraform {
 }
 
 inputs = {
-  project_name    = "proj-608926"
+  project_name    = "proj-02d1dc"
   environment     = include.env.locals.environment
   instance_name   = "instance-f96f8c"
   resource_prefix = "billing"
