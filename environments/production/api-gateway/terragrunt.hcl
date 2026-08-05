@@ -21,5 +21,5 @@ inputs = {
   environment     = include.env.locals.environment
   instance_name   = "instance-b1f8ac"
   resource_prefix = "res-8859a8"
-  service_name    = "svc-87722e"
+  service_name    = "svc-99068b"
 }
